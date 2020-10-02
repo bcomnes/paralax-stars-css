@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paralax Stars CSS</title>
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background: url("./stars1.png") repeat,
+      url("./stars2.png") repeat,
+      url("./stars5.png") repeat,
+      #04173d;
+      animation: scrolly 250s linear infinite;
+    }
+
+    @keyframes scrolly {
+      0% {background-position: -2000px 50px, -6000px 600px, -12000px 400px, 0px 0px, 0px 0px, 0px 0px, 0px 0px}
+      100% {background-position: 3000px 50px, 3000px 600px, 3000px 400px, 500px 0px, 1000px 0px, 1500px 0px, 500px 0px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Star paralax example found at https://roseknight.org  -->
+</body>
+</html>
